@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+/* MASTER STYLES */
+body {
+	margin: 0;
+	background:white;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.nav-container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*NAV STYLES*/
+header {
+  background: #F4E7D3;
+  border-bottom: 1px solid #1F4E5F;
+  position: relative;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.social-media{
+  padding-left: 10px;
+  padding-top: 12px;
+  display: flex;
+}
+.above-nav-container{
+  border-bottom: 1px solid #1F4E5F;
+  background-color: white;
+  overflow: hidden;
+  font-size: 14px;
+  display: flex;
+}
+.above-nav-container > p{
+  position: relative;
+  color: #1F4E5F;
+  padding-left: 940px;
+}
+.social-media > .igform{
+  padding-left: 7px;
+}
+.logo {
+  float: left;
+  padding: 10px 0;
+  margin:10px -40px 10px;;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 34px;
+  position: relative;
+}
+
+nav a {
+  color: #1F4E5F;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #1F4E5F;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: #a9c1c9;
+
+  /*position: absolute;*/
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/*HOME STYLES*/
+.portofolio-items-wrapper1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.portofolio-items-wrapper2{
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
+}
+.portofolio-item-wrapper{
+  position: relative;
+}
+.portofolio-img-background{
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*CONTACT STYLES*/
+
+body > p{
+  text-align: center;
+  padding-top: 35px;
+  border: 2px #1F4E5F;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #1F4E5F;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.contact-container{
+  display: flex;
+}
+.contact-container >.contact2> h3{
+  color: #1F4E5F;
+  padding-right: 0px;
+}
+.contact2{
+  padding-top: 25px;
+  float: initial;
+}
+
+div > h2{
+  color: #1F4E5F;
+}
+.form-container > .column{
+  color: #1F4E5F;
+  padding-left: 90px;
+}
+footer{
+  background-color: white;
+  border-top: 1px solid #1F4E5F;
+  color: #c7cdd9;
+}
+footer > h5{
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
